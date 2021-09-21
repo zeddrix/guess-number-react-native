@@ -54,8 +54,8 @@ const GameScreen = props => {
       (direction === 'lower' && currentGuess < props.userChoice) ||
       (direction === 'greater' && currentGuess > props.userChoice)
     ) {
-      Alert.alert("Don't lie!", 'You know that this is wrong...', [
-        { text: 'Sorry!', style: 'cancel' }
+      Alert.alert("Oops!", 'I think you just forgot the number. But you gave a wrong clue.', [
+        { text: 'I\'ll try again', style: 'cancel' }
       ]);
       return;
     }
